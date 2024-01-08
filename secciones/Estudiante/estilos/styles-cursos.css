@@ -1,0 +1,276 @@
+/* estilos generales */
+
+.body-seccion{
+  background-image: url(../../../imagenes/arboles.jpg);
+  background-size: cover; /* Ajustar la imagen para cubrir todo el fondo */
+  background-repeat: no-repeat; /* Evitar que la imagen se repita */
+  background-position: center center; /* Centrar la imagen horizontal y verticalmente */ 
+  min-height: 40vw;
+  padding: 5rem 5rem ;
+  color: antiquewhite;
+}
+
+.letra_new{
+  font-family: monospace;
+}
+
+.color_verde{
+  background-color: #05603E;
+  color: white;
+}
+
+.container{
+  margin: 20px, 20px, 20px, 20px;
+  border-color: black;
+}
+
+.center{
+    margin: 20, 20, 20, 20;
+}
+
+body{
+  background-color: rgb(107, 126, 126);
+}
+
+.color-blanco input{
+  width: 350px;
+  height: 33px;
+  border: 1px solid #193b5e;
+  margin: 5px 50px 5px 50px;
+}
+
+.container h1{
+  color: aliceblue;
+}
+
+/** Navbar */
+.navbar img{
+  margin-left: 1.5rem;
+}
+
+.derecha{
+  margin-left: 38vw;
+}
+
+.navbar-letra{
+  font-family: 'Pixelify Sans', cursive;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: black;
+}
+
+/* Ventana mosdal de crear usuario */
+
+.modo{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #111111bd;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .6s .6s;
+  --transform: translateY(-100vh);
+  --transition: transform .8s ;
+}
+
+.modo_container{
+  margin: auto;
+  width: 90%;
+  background-color: #abc181;
+  max-width: 600px;
+  max-height: 90%;
+  border-radius: 6px;
+  padding: 3em 2.5em;
+  display: grid;
+  gap: 1em;
+  /**place-items: center;*/
+  grid-column: 100%;
+  transform: var(--transform);
+  transition: var(--transition);
+}
+
+.modal_title{
+  font-size: 2.5rem;
+}
+
+.modal_close{
+  text-decoration: none;
+  color: white;
+  background-color: rgb(37, 35, 35);
+  padding: 1em 3em;
+  border: 1px solid;
+  border-radius: 6px;
+  display: inline-block;
+  font-weight: 300;
+  transition: background-color .3s;
+}
+
+/*.modal_close:hover{
+  color: rgb(12, 12, 12);
+  background-color: rgb(189, 173, 173);
+}*/
+
+
+/**/
+
+.ventana{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #111111bd;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .6s .6s;
+  --transform: translateY(-100vh);
+  --transition: transform .8s ;
+}
+
+.modo_container2{
+  margin: auto;
+  width: 90%;
+  background-color: #abc181;
+  max-width: 600px;
+  max-height: 90%;
+  border-radius: 6px;
+  padding: 3em 2.5em;
+  display: grid;
+  gap: 1em;
+  /**place-items: center;*/
+  grid-column: 100%;
+  transform: var(--transform);
+  transition: var(--transition);
+}
+
+
+.modal--show{
+  opacity: 1;
+  pointer-events: unset;
+  transition: opacity .6s;
+  --transform: translateY(0);
+  --transition: transform .8s .5s;
+}
+
+
+
+.relleno{
+  background-color: #abc181; 
+  padding: 1em 1em;
+}
+
+/** Iconos */
+
+.iconos-redes-sociales a{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i{
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+  background-color: white;
+  border: 2px solid rgb(13, 110, 253);
+}
+
+.iconos-redes-sociales a:hover i{
+  color: black;
+}
+
+.derechos-de-autor{
+  font-size: 15px;
+  color: #aeaeae;
+  padding: 20px;
+}
+
+
+/* estilos curso */
+
+.container_tr{
+align-items: center;
+padding: 0.7rem;
+margin: 0.2rem 0.2rem 0.2rem 0rem;
+background-color: #BECEB2;
+/*border-radius: 12.5%;*/
+max-height: 7rem;
+width: 87vw;
+border-color: #193b5e;
+}
+
+.color_modal_curso {
+background-color: #abc181;
+}
+
+/* ventanas modales sencillas */
+
+
+.modalC{
+position: relative;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+/*background-color: #111111bd;*/
+display: flex;
+opacity: 0;
+pointer-events: none;
+}
+
+.modalE{
+position: relative;
+top: -17.5vw;
+left: 0;
+right: 0;
+bottom: 0;
+/*background-color: #111111bd;*/
+display: flex;
+opacity: 0;
+pointer-events: none;
+}
+
+.modalF{
+position: relative;
+top: -24vw;
+left: 0;
+right: 0;
+bottom: 0;
+/*background-color: #111111bd;*/
+display: flex;
+opacity: 0;
+pointer-events: none;
+}
+
+.modalA{
+position: relative;
+top: -27.5vw;
+left: 0;
+right: 0;
+bottom: 0;
+/*background-color: #111111bd;*/
+display: flex;
+opacity: 0;
+pointer-events: none;
+}
+
+
+
+.modal--show2{
+opacity: 1;
+pointer-events: unset;
+}
